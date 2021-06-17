@@ -1,0 +1,46 @@
+//contains all the resets, variables, mixins, and utility classes
+
+*,
+*::after,
+*::before{
+    margin:0;
+    padding:0;
+    box-sizing:inherit;
+}
+
+html{
+    font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+}
+
+//FONTS
+$title-font: 'Alegreya', serif;
+$main-font:'Rubik', sans-serif;
+//font-family
+
+//COLORS
+$color-primary-black: #383838;
+$color-grey-faded: #97969C;
+
+
+body{
+    font-family: $main-font;
+    //font-weight:;
+    line-height:normal;
+    color: $color-primary-black;
+    box-sizing:border-box;
+    
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+

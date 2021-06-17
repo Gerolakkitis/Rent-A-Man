@@ -1,0 +1,89 @@
+//all the Sass code handling the layout which is the container and grid systems
+
+//Navigation, header, footer, sidebar, grid
+
+//The Layout partial has all styles necessary for the layout of the site, i.e., header, footer.
+
+
+.section--header{
+    
+    min-height: 32vh;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: stretch;
+    padding: 2rem 0;;
+    position: relative;
+    
+    
+
+    .header--info{   
+        display: flex;  
+        flex: 0 0 62%;
+        align-items:center;
+        justify-content: center;
+
+        .header--toolIcon {
+            display: none;
+            // display: flex;
+            // flex: 0 0 30%;
+            // align-items: flex-start;
+            // justify-content: center;
+            // padding-top: 15px;;
+            // svg{
+            //     width: 55%;
+            //     height: auto;     
+            //  }
+        }
+    
+        .header--text{
+            // position: absolute;
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            // flex-grow: 1;
+            justify-content: center;
+            align-items: center;
+
+            &--makeBold{
+                font-weight: bolder;
+            }
+        }
+    }
+
+    .header--flatCharacterHandyman{
+        display: flex;
+       align-items: flex-start;
+        flex-grow: 1;
+        justify-content: center;
+        padding-right: 5vw;;
+        width: auto;
+        svg{
+            width: 100%;
+            height: auto;
+            
+            }
+    }
+    
+}
+
+
+
+@media screen and (min-device-width:390px) and (max-device-width:480px){
+    .section--header{
+        flex: 0 0 78%;
+        font-size: 1.3rem;
+        min-height: 34vh;
+    }
+
+    .header--text{
+        position: absolute;
+        padding-left: 4rem;
+    }
+
+
+    
+}
+
+@media screen and (min-device-width:481px) and (max-device-width:768px){
+    body{background-color: rgb(255, 147, 147);}
+}
