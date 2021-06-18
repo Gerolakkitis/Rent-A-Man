@@ -25,13 +25,19 @@ nav {
   min-height: 11vh;
   padding-bottom: 1rem;
   font-family: "Alegreya", serif;
+  position: relative;
 }
 
 .nav-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-left: 5vw;
+  position: fixed;
+  width: 100%;
+  height: auto;
+  background-color: white;
+  z-index: 1;
+  padding-bottom: .5rem;
 }
 
 .nav-container .nav-logo {
@@ -39,18 +45,21 @@ nav {
   display: -ms-flexbox;
   display: flex;
   color: #383838;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 3.7rem;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 65%;
-          flex: 0 0 65%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 4.2rem;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 65%;
+          flex: 0 0 65%;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
   background-color: white;
+  width: 100%;
 }
 
 .nav-container .nav-logo .nav-sublogo {
@@ -58,7 +67,7 @@ nav {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -80,7 +89,6 @@ nav {
       -ms-flex-pack: end;
           justify-content: flex-end;
   padding-right: 2rem;
-  position: relative;
 }
 
 .nav-container .nav-menu .nav-links {
@@ -88,6 +96,17 @@ nav {
 }
 
 .nav-container .nav-menu .burger-menu {
+  padding: 2rem;
+  position: fixed;
+  top: -1.2rem;
+  right: .1rem;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.nav-container .nav-menu .burger-menu--background {
+  padding: .5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -95,15 +114,15 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-right: 3rem;
-  position: fixed;
-  top: 1.2rem;
-  right: .1rem;
+  width: 100%;
+  height: 100%;
+  background-color: #f7bc1c;
+  border-radius: 100%;
 }
 
-.nav-container .nav-menu .burger-menu .line {
-  height: 0.52rem;
-  width: 3rem;
+.nav-container .nav-menu .burger-menu--background .line {
+  height: 0.42rem;
+  width: 2.5rem;
   background-color: black;
   margin: .4rem;
   border-radius: 40%;
@@ -120,24 +139,27 @@ nav {
 
 @media screen and (min-device-width: 390px) and (max-device-width: 480px) {
   .nav-container .nav-logo {
-    font-size: 4.5rem;
+    font-size: 4.7rem;
   }
   .nav-container .nav-logo .nav-sublogo {
     font-size: 1.8rem;
     padding-left: 11rem;
   }
+  .nav-container .burger-menu .burger-menu--background {
+    padding: 1.5rem;
+  }
 }
 
 .section--header {
   min-height: 32vh;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
-  padding: 2rem 0;
+  padding: 4rem 0;
   position: relative;
 }
 
@@ -169,9 +191,6 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -185,9 +204,9 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -199,7 +218,7 @@ nav {
 }
 
 .section--header .header--flatCharacterHandyman svg {
-  width: 100%;
+  width: 13rem;
   height: auto;
 }
 
@@ -276,23 +295,62 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 75%;
-  height: auto;
-  margin: 1rem 2rem;
-  padding: 4rem 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 2rem;
-  background-color: #F5F4FF;
-  border-radius: 10%;
+  padding: 1rem 0;
+  margin: 1rem 1rem;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 13.5rem;
+  min-height: 13rem;
+  background-color: #f6f6ff57;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
 }
 
 .section2--servicesOffered .section2--wrapper .section2--cards .card--icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 7rem;
+  padding-top: 1rem;
+}
+
+.section2--servicesOffered .section2--wrapper .section2--cards .card--icon img {
   width: 50%;
-  padding-bottom: 1rem;
+  height: 100%;
+}
+
+.section2--servicesOffered .section2--wrapper .section2--cards .card--text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 6rem;
+  padding: 0 1rem;
+}
+
+.section2--servicesOffered .section2--wrapper .section2--cards .card--text h3 {
+  text-align: center;
+}
+
+.section2--servicesOffered .section2--wrapper .section2--cards .card:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 /*# sourceMappingURL=main.css.map */
