@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="725.2" height="745" viewBox="0 0 725.2 745">
+  <defs>
+    <filter id="Owner-slider-box" x="0" y="0" width="725.2" height="745" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feFlood flood-color="#311616"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Owner-slider-box)">
+    <path id="Owner-slider-box-2" data-name="Owner-slider-box" d="M118.635,0h463.93C648.086,0,701.2,41.269,701.2,109.2V616.678C701.2,684.609,648.086,721,582.565,721H118.635C53.115,721,0,665.931,0,598V123C0,55.069,53.115,0,118.635,0Z" transform="translate(12 10)" fill="#e6e5ff" opacity="0.33"/>
+  </g>
+</svg>

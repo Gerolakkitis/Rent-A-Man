@@ -21,7 +21,12 @@ $main-font:'Rubik', sans-serif;
 $color-primary-black: #383838;
 $color-grey-faded: #97969C;
 
+$color-white: #ffffff;
+$color-black: #000000;
+
 $color-background-nav: rgb(247, 188, 28);
+$color-light-purple: #E6E5FF;
+$color-light-blue: #f6f6ff57;
 
 
 body{
@@ -35,6 +40,10 @@ body{
     overflow-x: hidden;
 }
 
+
+h1, h2, h3{
+    text-transform: uppercase;
+}
 
 
 

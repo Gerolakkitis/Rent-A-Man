@@ -10,7 +10,7 @@
 
 
 .section2--servicesOffered{
-    min-height: 42vh;
+    min-height: 100vh;
     font-size: 1.1rem;
     padding: 6em 0;
     
@@ -40,7 +40,7 @@
             position: relative;
 
 
-            .card 
+            .flip-card 
             {
                 display: flex;
                 flex-direction: column;
@@ -50,9 +50,11 @@
                 margin: 1rem 1rem;
                 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
                 width: 13.5rem;;
-                min-height: 13rem;
-                background-color: #f6f6ff57;
-                transition: transform 1s;
+                min-height: 15rem;
+                background-color: $color-light-blue;
+                
+                position: relative;
+               
                 
                 &--icon{
                     display: flex;
@@ -79,24 +81,11 @@
                     h3{
                         text-align: center;;
                     }
-                }
 
-                &:hover{
-                   transform: scale(1.05);
-                    
+                
+              
                 }
-            }
-
-            
+            } 
         }
-
-
-
-
-
-
-
     }
-
-
 }

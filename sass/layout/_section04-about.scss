@@ -1,9 +1,26 @@
-//all the Sass code handling the layout which is the container and grid systems
+.section04--past-works{
+    min-height: 60vh;
+    padding: 6rem 0;
+    
+}
 
-//Navigation, header, footer, sidebar, grid
 
-//The Layout partial has all styles necessary for the layout of the site, i.e., header, footer.
+.past-works-container{
+    display: flex;
+    flex-direction: column;
 
-// footer{
-//     background-color: red; //example
-// }
+  .past-works-title{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}  
+
+    // .past-works-gallery{
+    //     height: 50rem;
+    //     width: 30rem;
+    //     background-color: blue;
+    // }
+
+
+}
+
