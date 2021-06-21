@@ -1,9 +1,146 @@
-//all the Sass code handling the layout which is the container and grid systems
+.section03--meetTheOwner{
+    min-height: 60vh;
+    padding: 6rem 0;
+    
+}
 
-//Navigation, header, footer, sidebar, grid
 
-//The Layout partial has all styles necessary for the layout of the site, i.e., header, footer.
+.slider-section-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+    justify-content: center;
 
-// footer{
-//     background-color: red; //example
-// }
+    .title{
+        width: 100%;
+        text-align: center;
+        font-size: 2.2rem;
+        padding-bottom: 2rem;
+    }
+
+    .slider-container{
+        
+        width: 90vw;
+        height: 40vh;
+        background-color: $color-light-purple;
+        box-shadow: 0px 7px 17px $color-black;
+        border-radius: 15%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        z-index:1;
+    }
+    .slider-block{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 50%;
+        text-align: center;
+        border-radius: 15%;
+        padding: 2rem ;
+        font-size: 1.7rem;
+        
+    
+        &__left{
+        background-color:$color-light-purple;
+       
+        
+    }
+
+        &__right{
+        background-color: $color-light-purple;
+       
+    }
+
+        &__top{ 
+        
+        position: absolute;
+        background-color:$color-white;
+        box-shadow: 2px 2px 5px $color-black;
+        right: 0;
+        top: 0;
+        transition: all 1.5s ease;
+        display: flex;
+        
+        
+        
+        .top-wrapper{
+            display: flex;
+            align-items: center;
+            
+            justify-content: center;
+            
+            .owner-img{
+                flex: 0 0 30vw; 
+                
+
+                img{
+                    width: 75%;
+                    height: auto;
+                    border-radius: 100%;
+                    opacity: .90;
+                    padding: 1vw;
+                    
+                    
+                    box-shadow: 0px 0px .5rem $color-black;
+                }
+             }
+            .hello-text{
+                padding: 1rem;
+                flex-grow: 1;
+                font-size: 2.5rem;
+            }
+        }
+
+        .top-wrapper-button{
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           width: 100%;
+           height: 100%;
+           
+           
+           
+
+        }
+        .sliderButton{ 
+       
+            background-color: $color-black;
+            box-shadow: 1px 2px 5px $color-black;
+            height: 63px;
+            width: 48px;
+            border-radius: 38%;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            .moving-circle{
+                position: absolute;
+                background-color: $color-light-purple;
+                box-shadow: 0px 0px 20px $color-black;
+                height: .3vh;
+                width: 3vw;
+                border-radius: 100%;
+                top: 1vh;
+                animation-name: move-vertically-down;
+                animation-duration: 3s;
+                animation-iteration-count: infinite;
+            }
+
+        } 
+        } 
+
+      
+    }
+    }
+    .slide{
+        transform: translateY(20vh);
+        }
+
+  
+
+    

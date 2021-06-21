@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1452.474" height="739" viewBox="0 0 1452.474 739">
+  <defs>
+    <filter id="Owner_layout" x="0" y="0" width="1452.474" height="739" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Owner_layout)">
+    <path id="Owner_layout-2" data-name="Owner layout" d="M134.73,0H1299.744c74.409,0,134.73,38.975,134.73,87.053V633.947c0,48.078-60.321,87.053-134.73,87.053H134.73C60.32,721,0,682.025,0,633.947V87.053C0,57,141.8,64.479,177.788,48.771,199.146,39.448,106.826,0,134.73,0Z" transform="translate(9 7)" fill="#fff" opacity="0.62"/>
+  </g>
+</svg>

@@ -1,1 +1,75 @@
-//contains all the resets, variables, mixins, and utility classes
+
+
+.flip-card--front, .flip-card--back{
+    
+    backface-visibility: hidden;
+    position: absolute;
+    transition: transform .4s linear;
+    
+    
+}
+
+.flip-card{
+    &--front{
+    transform: perspective(600px) rotateY(0deg);
+    
+
+}
+
+.flip-card
+    &--back{
+    transform: perspective(600px) rotateY(180deg);
+}
+}
+
+
+.flip-card:hover> .flip-card--front{
+    transform: perspective(600px) rotateY(-180deg);
+    
+}
+
+.flip-card:hover> .flip-card--back{
+    transform: perspective(600px) rotateY(0deg);
+}
+
+
+
+
+@keyframes move-vertically-down{
+    0% {
+
+        transform: translateY(0vh);
+        opacity: 0;
+    }
+    
+    
+    30%{
+        width: 3.2vw;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(5.5vh);
+        opacity: 0;
+    }
+
+}
+
+@keyframes move-vertically-up{
+    0% {
+        transform: translateY(5.5vh);
+        opacity: 0;
+    }
+    30%{
+        width: 3.2vw;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(0vh);
+        opacity: 0;
+    }
+
+}

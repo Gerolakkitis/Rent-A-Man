@@ -18,8 +18,8 @@ nav{
         position: fixed;
         width: 100%;
         height: auto;
-        background-color: white;
-        z-index: 1;
+        background-color: $color-light-purple;
+        z-index: 10;
         padding-bottom: .5rem;
 
         
@@ -32,7 +32,7 @@ nav{
             font-size: 4.2rem;
             flex: 0 0 65%;
             align-content: flex-end;
-            background-color: rgb(255, 255, 255);
+            background-color: $color-light-purple;;
             width: 100%;
             
 
@@ -72,6 +72,7 @@ nav{
                 top: -1.2rem;
                 right: .1rem;
                 align-items: flex-end;
+                
                 
 
                 &--background{
